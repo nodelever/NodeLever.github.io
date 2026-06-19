@@ -368,7 +368,7 @@ export default function LangwageLogin() {
     setErrorMsg('');
 
     try {
-      const response = await fetch('https://the-king-backend.onrender.com/api/auth/login', {
+      const response = await fetch('https://the-king-backend-cutd.onrender.com/api/auth/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password }),

@@ -139,7 +139,7 @@ export const useProfileStore = create((set, get) => ({
     set({ loading: true });
     try {
       const token = localStorage.getItem('token'); 
-      const response = await fetch('https://the-king-backend.onrender.com/api/profile/status', {
+      const response = await fetch('https://the-king-backend-cutd.onrender.com/api/profile/status', {
         headers: {
           'Authorization': `Bearer ${token}`
         }
@@ -183,7 +183,7 @@ export const useProfileStore = create((set, get) => ({
         }
       });
 
-      const response = await fetch('https://the-king-backend.onrender.com/api/profile/submit', {
+      const response = await fetch('https://the-king-backend-cutd.onrender.com/api/profile/submit', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}` 
@@ -218,7 +218,7 @@ export const useProfileStore = create((set, get) => ({
     set({ loading: true });
     try {
       const token = localStorage.getItem('token');
-      const response = await fetch('https://the-king-backend.onrender.com/api/profile/legal-agree', {
+      const response = await fetch('https://the-king-backend-cutd.onrender.com/api/profile/legal-agree', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

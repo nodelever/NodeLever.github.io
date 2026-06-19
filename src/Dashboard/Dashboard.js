@@ -54,7 +54,7 @@ export default function Dashboard() {
         const token = localStorage.getItem('token');
         if (!token) return;
 
-        const response = await fetch('https://the-king-backend.onrender.com/api/user/me', {
+        const response = await fetch('https://the-king-backend-cutd.onrender.com/api/user/me', {
           method: 'GET',
           headers: { 'Authorization': `Bearer ${token}` }
         });

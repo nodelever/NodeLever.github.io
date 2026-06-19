@@ -224,7 +224,7 @@ export const ProjectPage = () => {
       
       payload.append('qualificationAnswers', JSON.stringify(questionAnswers));
 
-      const response = await fetch('https://the-king-backend.onrender.com/api/profile/projectsubmission', {
+      const response = await fetch('https://the-king-backend-cutd.onrender.com/api/profile/projectsubmission', {
         method: 'POST',
         body: payload
       });

@@ -197,7 +197,7 @@ export default function LangwageRegistration() {
     setErrorMsg('');
 
     try {
-      const response = await fetch('https://the-king-backend.onrender.com/api/auth/send-otp', {
+      const response = await fetch('https://the-king-backend-cutd.onrender.com/api/auth/send-otp', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ 
@@ -232,7 +232,7 @@ export default function LangwageRegistration() {
     setErrorMsg('');
 
     try {
-      const response = await fetch('https://the-king-backend.onrender.com/reg', {
+      const response = await fetch('https://the-king-backend-cutd.onrender.com/reg', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

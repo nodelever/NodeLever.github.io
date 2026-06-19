@@ -37,7 +37,7 @@ const handleUpload = async () => {
       const formData = new FormData();
       formData.append('w9File', file);
 
-      const response = await fetch('https://the-king-backend.onrender.com/api/profile/w9-submit', {
+      const response = await fetch('https://the-king-backend-cutd.onrender.com/api/profile/w9-submit', {
         method: 'POST',
         headers: { 'Authorization': `Bearer ${token}` },
         body: formData,
