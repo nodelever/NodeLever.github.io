@@ -18,6 +18,7 @@ import EmailVerified from './components/sections/EmailVerified';
 // 1. Import the new Project List and Detail components instead of the single ProjectsPage
 import ProjectsList from './pages/ProjectsList';
 import ProjectDetail from './pages/ProjectDetail';
+import JobsPage from './pages/JobsPage';
 
 // Import the legal pages
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
@@ -60,6 +61,7 @@ const AppContent = () => {
           {/* 2. New Dynamic Project Routes */}
           <Route path="/project" element={<ProjectsList />} />
           <Route path="/project/:id" element={<ProjectDetail />} />
+          <Route path="/jobs" element={<JobsPage />} />
 
           {/* Legal Routes */}
           <Route path="/privacy" element={<PrivacyPolicyPage />} />
